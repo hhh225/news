@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/starsky"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#E0C1FD"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="账号："
+                android:gravity="center"
+                android:textSize="25sp"/>
+            <EditText
+                android:id="@+id/et_User"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:singleLine="true"
+                android:hint="请输入你的账号"
+                android:background="@null"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="#E0C1FD"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="密码："
+                android:gravity="center"
+                android:textSize="25sp"/>
+            <EditText
+                android:id="@+id/et_Pass"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="25sp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:hint="请输入你的密码"
+                android:background="@null"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <!--去掉get登录-->
+        <!--<Button
+        android:id="@+id/btn_GetLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get登录"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:background="#BB87E0"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>-->
+
+        <Button
+            android:id="@+id/btn_PostLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:background="#BB87E0"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_Forget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:text="忘记用户名密码"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPink"
+                android:textSize="20sp" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorTransparent"/>
+
+            <Button
+                android:id="@+id/btn_Register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTransparent"
+                android:text="注册"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPink"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
